@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="com.crm.qa.TestScripts.LoginTest">
+        <methods>
+          <include name="TestInvalidLogin"/>
+          <include name="setExtent"/>
+          <include name="TestForgotPassword"/>
+          <include name="tearDown"/>
+          <include name="TestValidLogin"/>
+          <include name="endreport"/>
+          <include name="TestSignUp"/>
+          <include name="TestClassicCRM"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.crm.qa.TestScripts.LoginTest -->
+      <class name="com.crm.qa.TestScripts.HomeTest">
+        <methods>
+          <include name="setExtent"/>
+          <include name="validateUser"/>
+          <include name="tearDown"/>
+          <include name="endreport"/>
+          <include name="validateHomePage"/>
+          <include name="validateMenuList"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.crm.qa.TestScripts.HomeTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

@@ -61,6 +61,7 @@ public class LoginPage extends TestUtils{
 			TestUtils.clickOn(LoginButton);
 		}
 		
+
 		/** Validates the Invalid user and reads error message  
 		 * @return String of error message
 		 */
@@ -77,6 +78,7 @@ public class LoginPage extends TestUtils{
 		public void forgotPassword()
 		{
 			TestUtils.clickOn(forgotPasswordLink);
+			driver.navigate().to("https://register.cogmento.com/password/reset/request/");
 			String ActualForgotPasswordPageHeader= TestUtils.verifyHeaderText(forgotPasswordPageHeader);
 			verifyExpectedResult(ActualForgotPasswordPageHeader, "Forgot my password");
 		

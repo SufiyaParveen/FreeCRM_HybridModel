@@ -5,8 +5,11 @@
     <classes>
       <class name="com.crm.qa.TestScripts.LoginTest">
         <methods>
+          <include name="LoginPageValidation"/>
+          <include name="setExtent"/>
+          <include name="setUp2"/>
           <include name="tearDown"/>
-          <include name="TestValidLogin"/>
+          <include name="endreport"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.crm.qa.TestScripts.LoginTest -->

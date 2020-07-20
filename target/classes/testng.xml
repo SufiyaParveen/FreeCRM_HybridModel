@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Demo CRM Hybrid">
+
+		<groups>	
+				<run>	
+   					 <include name="loginNotRequired" />	
+   					 <include name="loginRequired" />
+        		</run>	
+       		</groups>	
+  <test name="Demo CRM Testcase">
+  
+  	
+  
+    <classes>
+   		<class name="com.crm.qa.TestScripts.LoginTest">
+   		<methods>
+   		
+   			<include name="LoginPageValidation"></include>
+   			<include name="TestValidLogin"></include>
+   			
+   		</methods>
+   		
+   		</class>
+      	<!-- <class name="com.crm.qa.test.HomeTest"/>
+      	<class name="com.crm.qa.test.ContactsTest"/>  -->
+      	    </classes>
+  </test>
+</suite>
